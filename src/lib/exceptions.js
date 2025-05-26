@@ -1,4 +1,4 @@
-const HttpError = require('standard-http-error')
+const HttpError = require('./httpError')
 
 class BaseError extends HttpError {
   constructor(code, msgBaseErrorOrContext, baseErrorOrContext, context) {
@@ -17,6 +17,7 @@ class BaseError extends HttpError {
       (!msg && msgBaseErrorOrContext instanceof Error && baseErrorOrContext) ||
       undefined
     super(code, msg, baseError)
+    // Set context as own enumerable property for testing compatibility
     this.context = ctx
   }
 }

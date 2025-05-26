@@ -1,4 +1,4 @@
-const HttpError = require('standard-http-error')
+const HttpError = require('./httpError')
 const {escapeRegExp} = require('lodash')
 const parseUrl = require('url-parse')
 const deviceDetector = require('device-detector')

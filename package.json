@@ -30,7 +30,6 @@
     "lodash": "^4.17.10",
     "pino": "^5.8.0",
     "pino-http": "^4.1.0",
-    "standard-http-error": "^2.0.1",
     "url-parse": "^1.4.4"
   },
   "devDependencies": {

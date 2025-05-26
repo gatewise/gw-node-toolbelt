@@ -1,4 +1,4 @@
-const HttpError = require('standard-http-error')
+const HttpError = require('../src/lib/httpError')
 const _ = require('lodash')
 const {
   AlreadyExistsError,
